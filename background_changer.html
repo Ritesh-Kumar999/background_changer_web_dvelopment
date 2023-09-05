@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+       body{
+        margin:0px;
+        padding:20px 100px;
+       }
+       h1{
+        text-align:center;
+        text-decoration:underline;
+       }
+       img{
+        width:100%;
+        height:auto;
+         margin:0 auto;
+       }
+       p{
+        font-size:18px;
+        text-align: justify;
+       }
+       .btn{
+        width:20px;
+        height:20px;
+        /* span inline h isliye ye height and width nhi lega isliye isse inline block krna prega */
+        display:inline-block;
+        border:solid grey 2px;
+        border-radius:50%;
+        cursor: pointer;
+       }
+       #white{
+        background-color:white;
+       }
+       #aqua{
+        background-color:aqua;
+       }
+       #yellow{
+        background-color:yellow;
+       }
+       #black{
+        background-color:black;
+       }
+       #color-switcher
+       {
+        text-align:right;
+       }
+    </style>
+</head>
+<body>
+     <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        
+        <span class="btn" id="aqua" onclick="changeBG('#00ffff')"></span>
+        
+        <span class="btn" id="yellow" onclick="changeBG('#ffff00')"></span>
+        
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+        
+     </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet cumque qui possimus ipsum sint placeat, quaerat, libero, deleniti corporis perferendis necessitatibus! Eaque modi quod ea minima ipsum distinctio a aut dolor iusto placeat, adipisci sit quae nam ex, quaerat laborum id numquam quibusdam mollitia inventore recusandae doloribus deleniti amet. Qui vel, consequuntur delectus laborum quos dicta suscipit magnam eligendi doloribus eaque sed ab, odio illum mollitia, non voluptatum. Ex eaque porro ab, vel recusandae excepturi quia provident rerum, aut labore, ullam ipsa? Vero animi, laborum recusandae nihil voluptates temporibus aspernatur, ex sint voluptate dolorum eius possimus ea enim sunt officiis sed impedit adipisci culpa rerum velit error a? Perspiciatis harum error, recusandae aspernatur eaque ratione sit, expedita ullam similique voluptatibus ipsum optio nisi officia iste architecto et magni ipsam laudantium placeat reprehenderit odit ad excepturi! Dolore molestias aliquid ducimus! Voluptas ex quod, facere quasi molestiae ea? Harum expedita asperiores iure eos adipisci voluptatibus dolores laudantium illum sequi cupiditate soluta ut, et facere cum, mollitia laborum quaerat voluptatem accusamus fugiat enim. Animi, voluptate! Incidunt quod, nemo quo placeat ad quas vero rem dolores possimus qui reiciendis esse beatae ullam delectus veritatis neque vel natus earum assumenda aliquid consequatur dolorem! Nam veniam repudiandae possimus laborum sapiente accusantium totam quis, iusto fugit rem, quisquam ea accusamus eos ratione voluptatibus sunt inventore dolor debitis porro praesentium sit repellat quo tempore. Ab, alias harum, perferendis repudiandae odit quod unde accusantium labore nostrum distinctio amet molestiae doloribus, quibusdam nihil consequuntur? Labore ducimus iusto rerum reiciendis aut. Placeat, dolorem velit cumque reiciendis adipisci atque rem molestias dolores iste nam suscipit. Suscipit nisi voluptatibus praesentium amet nihil? Similique voluptates quam repellat expedita ex facere sequi delectus? Expedita quo omnis odio saepe non consectetur ducimus quam rerum aut ipsa temporibus perspiciatis, ab, quasi illo assumenda? Commodi maiores deserunt qui inventore possimus eius distinctio autem cumque praesentium molestias animi quo porro, voluptates nisi exercitationem tenetur hic molestiae totam? Doloribus ratione iure molestiae. Sint, placeat deleniti expedita saepe quaerat, praesentium alias incidunt dolore rem culpa soluta dignissimos ratione non repudiandae. Tenetur fugit earum atque incidunt esse odio sed quae ab! Expedita exercitationem, vero odit aut delectus rem voluptatem accusantium adipisci non aspernatur sunt qui alias atque odio, fugiat voluptatibus error? Nulla iste commodi soluta libero, dolore deserunt, fuga quae sapiente reiciendis nobis voluptates amet perspiciatis laudantium, qui dignissimos omnis enim distinctio! Laudantium, aperiam nisi explicabo et voluptate odit eaque sed eligendi id consequuntur ratione, repellendus unde cum reprehenderit vero repudiandae saepe minima, aliquam suscipit. Et, commodi vel consequatur consequuntur dolor accusamus iusto repudiandae dignissimos veritatis nostrum sint repellat perspiciatis vitae aspernatur soluta iste, ipsam consectetur obcaecati! Quisquam non ipsa officia culpa nostrum necessitatibus distinctio, laudantium soluta. Maiores voluptatem, fuga nisi fugiat ipsa eveniet in dolore, quam est animi alias? Ad, nemo tenetur doloribus culpa quos rerum autem dolore, accusantium fuga voluptate cupiditate? Minima, accusantium? Suscipit aspernatur sunt adipisci ea quibusdam fugiat architecto, modi animi? Voluptas accusantium error ut quidem dolor aliquid repellendus illo, non distinctio delectus obcaecati cumque itaque iste porro.
+    </p>
+    <script>
+       function  changeBG(color)
+        {
+            document.body.style.backgroundColor=color;
+            let txt=document.getElementsByClassName("text");
+            if(color=="#000000")
+            {
+                for(let elm of txt)
+                {
+                    elm.style.color="white"
+                }
+            }
+            else
+            {
+                for(let elm of txt)
+                {
+                    elm.style.color="black"
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
